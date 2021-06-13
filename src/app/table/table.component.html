@@ -1,0 +1,13 @@
+<h2>Part 3 - Table Functions</h2>
+<table>
+  <tr>   
+    <th class="w-first">Product name <img [src]="column==='name' ? iconImg : 'assets/images/default.png'" (click)="sortBy('name')"/></th>
+    <th>Price <img [src]="column==='price' ? iconImg : 'assets/images/default.png'" (click)="sortBy('price')"/></th>
+    <th class="w-last">Category <img [src]="column==='category' ? iconImg : 'assets/images/default.png'" (click)="sortBy('category')"/></th>
+  </tr>
+  <tr *ngFor="let item of productData; let i = index">
+    <td>{{item.name}}</td>
+    <td>{{item.price}}</td>
+    <td>{{item.category}}</td>
+  </tr>
+  </table>

@@ -1,0 +1,36 @@
+  /**Table CSS**/
+  table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: #666;
+    margin-bottom: 50px;
+    max-width: 500px;
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+    padding: 14px;
+  }
+  .w-first {
+    width: 45%;
+  }
+
+  .w-last {
+    width: 22%;
+  }
+  
+  table tr:nth-child(odd){background-color: #f7f7f7;}
+  
+  table tr:hover {background-color: #f0f6ff;}
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #F7F7F7;
+  }
+
+  table th > img {
+    cursor: pointer;
+  }
